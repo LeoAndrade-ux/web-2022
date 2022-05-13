@@ -1,0 +1,112 @@
+<!--
+    HTML (Hypertext markup language)
+    Este lenguaje usa etiquetas
+    <etiqueta> Contenido </etiqueta>
+    las etiquetas tienen atributos
+    <etiqueta atributo ="valor">Contenido</etiqueta>
+    los atributos cambian el comportamiento de la etiqueta
+    <h1 class ="uno">UNO</h1>
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- lenguaje español
+    cabecera se ubican los metadastos o datos no visibles dentro del cuerpo de la pagina
+
+    -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="keywords" content="web, primera, 1,2,3" />
+    <meta name="autor" content="Leonardo Andrade" />
+    <meta name="copyright" content="Derechos de autor Leonardo" />
+    <link rel="shortcut icon" href="/1.html/img/auto.ico" />
+    <link rel="stylesheet" href="/1.html/estilo/1html.css" />
+    <title>Primera pagina web</title>
+</head>
+
+<body background-color=skyblue>
+    <h1>Primera página web</h1>
+    <h2>Primera pagina web</h2>
+    <h3>Primera pagina web</h3>
+    <h4>Primera pagina web</h4>
+    <h5>Primera pagina web</h5>
+    <h6>Primera pagina web</h6>
+
+    <!--las etiquetas h son para titulos
+        todo lo que existe en una pagina web es texto estatico o dinamico -->
+    <h2>Parrafo</h2>
+    <p>
+        Lorem, ipsum dolor sit amet <b>consectetur</b> <i>adipisicing</i> <del>elit</del>. Alias facilis veritatis
+    </p>
+    <br>
+    <hr>
+    <p> totam consectetur quos, ut molestiae, vel eveniet, accusantium ipsa natus quibusdam quia<br>
+        <code>voluptatum codigo </code>maiores fuga quidem ipsum ipsam eaque.
+    </p>
+    <h2>Imagenes</h2>
+    <!--alt: texto alternativo
+        title: titulo de la imagen
+        src: ruta de la imagen -->
+    <img
+        src="https://cnnespanol.cnn.com/wp-content/uploads/2019/12/s_64a163f16ecbb099e52f2f8271f73cbbfcfc9034be4d646f7375e4db1ca6f3d7_1573501883482_ap_19001106049831-1.jpg?quality=100&strip=info&w=320&h=240&crop=1%22"><br>
+    <p>imagen de forma local</p> <br>
+    <img src="/1.html/img/auto.jpg" alt="Auto" title="Imagen de forma local"><br>
+    <h2>Internal frame</h2>
+    <iframe widht="500" height="315" src="http://globalmentoring.com.mx"></iframe>
+    <br>
+    <h2>Video</h2>
+    <video src="" controls width="480"></video>
+    <br>
+    <h2>audio</h2>
+    <audio src="" controls></audio>
+    <br>
+    <h2>Lista</h2>
+    <br>
+    <h3>Lista Ordenada</h3>
+    <ol>
+        <li><b>Uno</b></li>
+        <li><b>DOS</b></li>
+    </ol>
+    <br>
+    <h3>Lista NO Ordenada</h3>
+    <ul>
+        <li><b>Uno</b></li>
+        <li><b>DOS</b></li>
+    </ul>
+    <br>
+    <h2>Tablas</h2>
+    <table>
+        <thead>
+            <caption>Mi tabla</caption>
+            <tr>
+                <th>1</th>
+                <th>Pichincha</th>
+                <th>Quito</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>Guayaquil</td>
+                <td>Guayas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h2>Formularios</h2>
+    <form>
+        <label for ="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name ="nombre" placeholder="Escribe tu nombre"/><br>
+
+        <label for ="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name ="apellido" placeholder="Escribe tu apellido"/><br>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+
+</html>

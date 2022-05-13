@@ -1,0 +1,17 @@
+body{
+    /*background-color: skyblue;*/
+    background-image: url(/1.html/img/B91.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    color:red;
+    text-transform:uppercase;
+    text-align:center;
+}
+li{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
