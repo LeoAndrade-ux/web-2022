@@ -1,0 +1,112 @@
+/*CSS se define una serie de terminos que permiten describir cada una de las
+partes que componen los estilos CascadeStyleSheet
+Componente de un estilo CSS basico
+|<---------------------------------->| regla CSS
+|<->| selector
+    <---------------------------------->|
+    selector universal
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    selector del tipo o etiqueta
+    p{
+        text-aling: center;
+    }
+
+    selector descendente (elementos dentro de otros)
+    selector de clase: permite aplicar estilos mediante el aributo class
+
+    combinacion de selectores basicos
+    .destacado .error .alerta {}
+    div.alert span,especial{}
+
+    Unidades de medida
+    in pulgadas
+    cm centimetros
+    mm milimetros
+    pt puntos
+    pc picas
+
+    0.5in --> .5in
+
+    unidades relativas
+    em no como <em>, relativa al tamaño de la letra
+    ex respecto a la altura de la letra x
+    px pixel respecto a la resolucion de la pantalla del dispositivo
+
+    porcentajes
+
+    Cajas
+    Los navegadores las colocan de forma automatica, pero con CSS es posible modificar sus caracteristicas
+
+    las partes de una caja
+    contenido (content)
+    relleno (padding)
+    borde (border)
+    imagen de fondo (background-imagen)
+    color de fondo (background-color)
+    margen (margin) separacion entre la caja y el resto de cajas adyacentes
+    el relleno y margen son transparentes
+
+    Anchura
+    height
+    min-height max-height
+
+    Altura
+
+
+
+*/
+
+h1{
+    color: crimson;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5em;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    padding:auto;
+    margin:auto;
+    position:absolute;
+    top: 0;
+    text-align: justify;
+    background-color: skyblue;
+    /*border: solid skyblue 5px;
+    border-radius: 10px;*/
+    font-size: 3em;
+}
+main{
+    background-color: coral;
+}
+main section{
+    color: yellow;
+}
+aside{
+    background-color: crimson;
+    color: white;
+}
+footer{
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: 47%;
+    padding: 2px;
+    margin: 3px 12px;
+    border: solid red 5px;
+    border-radius: 7px;
+    float: left;
+}
+
+@font-face {
+    font-family: "comforter";
+    src: url(font/ComforterBrush-Regular.ttf);
+}
+
