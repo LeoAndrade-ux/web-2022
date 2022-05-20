@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#container{
+    width: 70%/*Porcentaje de la pantalla*/;
+    background-color: red;
+    margin: 9px auto;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+header{
+    width: 100%;
+    background: lightblue;
+    color: gray;
+    line-height: 150px;
+    text-align: center;
+}
+aside{
+    width: 25%;
+    float: left;
+    min-height: 700px;
+    background-color: #ccc;
+    line-height: 700px;
+}
+#articulos{
+    width: 75%;
+    min-width: 150px;
+    float: left;
+    background-color: lightgreen;
+}
+#articulos article{
+    width: 25%;
+    height: 150px;
+    background-color: green;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    margin: 15px;
+}
+@media (max-width:1103px) {
+    #container{
+        overflow: hidden;
+    }
+    aside{
+        float:none;
+        min-height: auto;
+        line-height:20px;
+        width: 90%;
+        padding: 20px;
+    }
+    #articulos{
+        width: 100%;
+    }
+    #articulos article{
+        width: 90%;
+        background-color: blue;
+    }
+}
+@media(max-width: 800px){
+    body{
+        background-color: yellow;
+    }
+}
