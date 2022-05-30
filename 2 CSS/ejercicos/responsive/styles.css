@@ -45,3 +45,27 @@ aside{
     float: left;
     margin: 15px;
 }
+@media (max-width:1103px) {
+    #container{
+        overflow: hidden;
+    }
+    aside{
+        float:none;
+        min-height: auto;
+        line-height:20px;
+        width: 90%;
+        padding: 20px;
+    }
+    #articulos{
+        width: 100%;
+    }
+    #articulos article{
+        width: 90%;
+        background-color: blue;
+    }
+}
+@media(max-width: 800px){
+    body{
+        background-color: yellow;
+    }
+}
