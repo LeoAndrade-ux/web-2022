@@ -3,6 +3,10 @@
         width: 90%;
         margin: 0px auto;
     }
+    #menu{
+        background-color: gray;
+        width: 100%;
+    }
     #banner h1{
         width:100%;
         font-size: 35px;
@@ -13,7 +17,7 @@
     .card{
         width: 17%;
         margin: 5.45px;
-        margin-top: -120px;
+        margin-top: 10px;
         margin-left: 15px;
     }
     .card p{
