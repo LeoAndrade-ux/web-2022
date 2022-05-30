@@ -1,0 +1,409 @@
+/*Fuentes personalizadas
+fonts/TrebuchetMS.ttf*/
+@font-face {
+    font-family: "TrebuchetMS";
+    src: url('css/fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style: mormal;
+}
+@font-face {
+    font-family: "BebasNeue";
+    src: url('fonts/BebasNeue.otf');
+    font-weight: normal;
+    font-style: mormal;
+}
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsregular') format('svg');
+    font-weight: normal;
+    font-style: mormal;
+}
+/*Estilos generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("img/pattern.jpg");
+}
+.wrap{
+    width: 1250px;
+    margin: 0px auto;
+}
+.museum{
+    width: 35px;
+}
+.icon{
+    font-family: "WebSymbolsRegular";
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+/*Cabecera*/
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    font-family: "BebasNeue";
+    /*color: white;*/
+}
+.container{
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    z-index: 2;
+}
+
+#logo{
+    float: left;
+    width: 500px;
+    color: white;
+    color: black;
+    margin-top: 8px;
+    margin-left: 20px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+/*animacion*/
+#logo:hover{
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    border: 4px solid black;
+}
+#logo .museum{
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+
+}
+
+#logo h3{
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 40px;
+    transition: all 300ms;
+    text-align: left;
+}
+#logo:hover h3{
+    animation: desdeDerecha 300ms linear;
+}
+@keyframes desdeDerecha {
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+#menu{
+    float: right;
+    height: 70px;
+    background: transparent;
+}
+#menu ul li{
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+#menu ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    transition: all 200ms;
+}
+#menu ul li a:hover{
+    color: white;
+    transform: scale(1.2,1.2);
+}
+/*banner*/
+#banner{
+    display: block;
+    width: 100%;
+    height: 660px;
+    background-image: url("img/Museo_templo_del_sol.jpg");
+    background-size:auto;
+    margin: 20px auto;
+    overflow: hidden;
+    animation: movBanner 10s linear;
+}
+#banner div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: "TrebuchetMS";
+    font-size: 1.35rem;
+}
+#banner p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+@keyframes movBanner {
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -100px -100px;
+    }
+}
+#banner h1{
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    color: black;
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    margin: 15px 15px 480px 15px;
+    animation: mostrarTexto 10s linear;
+}
+@keyframes mostrarTexto {
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
+}
+/*tarjetas*/
+.card{
+    float: left;
+    width: 350px;
+    height: 450px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #ddd;
+    background: white;
+    overflow: hidden;
+    margin: 22px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 300ms;
+}
+.card:hover{
+    background: black;
+}
+.card:last-child{
+    margin-right: 0px;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+}
+.card:hover img{
+    transform: rotate(0deg) scale(1);
+}
+.card .category{
+    width: 100%;
+    margin-top: 25px;
+    height: 50px;
+    font-family: "TrebuchetMS";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    position: relative;
+    transition: all 300ms;
+}
+.card:hover .category{
+    color: #4baf50;
+    animation: mostrarCategoria 400ms linear;
+}
+@keyframes mostrarCategoria {
+    from{
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0%);
+        color: #4baf50;
+    }
+}
+.card .description{
+    font-family: "TrebuchetMS";
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+    margin-top: 15px;
+    transition: all 300ms;
+}
+.card:hover .description{
+    color: white;
+    animation: mostrarDescription 400ms linear;
+}
+@keyframes mostrarDescription {
+    from{
+        transform: translateY(-300%);
+    }
+    to{
+        transform: translateY(0%);
+        color: white;
+    }
+}
+.card .readmore{
+    display: block;
+    width: 50%;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 20px;
+    font-family: "TrebuchetMS";
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background: rgb(216, 210, 210);
+    border-radius: 20px;
+    text-decoration: none;
+}
+.card .readmore:hover{
+    background: white;
+    color: #4baf50;
+
+}
+
+/*Footer*/
+#footer{
+    width: 100%;
+    margin-top: -20px;
+    height: 495px;
+    background: gray;
+    overflow: hidden;
+}
+#footer .wrap > div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+#footer a{
+    text-decoration: none;
+    color: black;
+    transition: all 300ms;
+}
+
+#footer h5{
+    display: block;
+    background: gray;
+    height: 50px;
+    letter-spacing: 2px;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#footer h2{
+    display: block;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: left;
+    font-family: "BebaNeue";
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+#footer ul{
+    text-align: left;
+    /*margin: 20px;*/
+    font-size: 25px;
+}
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms
+}
+#footer ul li a:hover{
+    color: white;
+    width: 100%;
+}
+#footer #info a{
+    font-size: 25px;
+}
+#footer #info a:hover{
+    color: white;
+}
+#footer #info span{
+    font-size: 18px;
+    margin-left: 15px;
+}
+#footer #autor{
+    display: block;
+    text-align: center;
+    font-family: "TrebuchetMS";
+    font-size: 15px;
+    color: white;
+}
+#footer #autor a:hover{
+    text-decoration: underline;
+}
+.social{
+    height: 70px;
+    background: transparent;
+    margin:0px;
+
+}
+
+.social ul li{
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px;
+    letter-spacing: 1px;
+    line-height: 0px;
+}
+.social ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    transition: all 200ms;
+}
