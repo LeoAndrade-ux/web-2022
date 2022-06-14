@@ -1,40 +1,41 @@
-"use strict";
-/*
-Sentecia if
+'use strict'
+/*Condicional if
 Si A es igual a B entonces haz algo
-operaciones racionales
-mayor >
-menor <
-menor igual <=
-mayor igual >=
-igual == ===
-distinto !=
+- Operadores relacionales
+    mayor: >
+    menor: <
+    mayor igual: >=
+    menor igual: <=
+    igual: == ===
+    distinto: !=
 */
-var edad = 80;
-var nombre = "Juan";
-if (edad >= 18) {
-    console.log(nombre + " Es mayor de edad");
-    if (edad <= 30) {
-    console.log(nombre + " Eres joven");
-    } else if (edad <= 65) {
-    console.log(nombre + " Eres anciando");
-    } else {
-    console.log(nombre + " Jubilate");
+var edad=80;
+var nombre="Luis";
+
+if(edad>=18){
+    console.log(nombre + " es mayor de edad.");
+
+    if(edad<=30){
+        console.log(nombre + " eres joven.");
+    }else if(edad<=65){
+        console.log(nombre + " eres anciano.");
+    }else{
+        console.log(nombre + " eres un adulto mayor.");
     }
 }else{
-    console.log(nombre + "eres menor de edad")
+    console.log(nombre + " eres menor de edad.");
 }
 
 /*
-Operadores logicos:
-and &&
-or ||
-not !
+- Operadores logicos
+    AND (Y): &
+    OR (o): ||
+    NOT: !
 */
-var year = 2022;
-if (year != 2019){
-    console.log("no estamos en el 2016");
+var anio=2022;
+if(anio!=2019){
+    console.log("No estamos en el anio 2019");
 }
-if (year >=2019 && year <= 2022){
-    console.log("Estamos en pandemia");
+if(anio>=2019 && anio<=2022){
+    console.log("Hemos experimentado una pandemia.");
 }
