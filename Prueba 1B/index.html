@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" typpe="favicon/x-icon" href="css/img/icon.png">
+    <link rel="icon" typpe="favicon/x-icon" href="img/Icono_FP.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -16,9 +16,9 @@
     <!--Inicio de cabecera-->
     <nav class="navbar navbar-expand-lg fixed-top barra_navegacion navbar-light">
         <div class="container-fluid">
-            <span><img class="img-fluid" style="width:35px" src="css/img/museum.ico" alt="Museo"
-                title="Museo"></span>
-        <a class="navbar-brand" href="#"><b style="font-size: 24px">Ferreteria Padilla</b></a>
+            <span><img class="img-fluid" style="width:35px" src="img/Icono_FP.ico" alt="Ferreteria Padilla"
+                    title="Ferreteria Padilla"></span>
+            <a class="navbar-brand" href="#"><b style="font-size: 24px">Ferreteria Padilla</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuDespegable"
                 aria-controls="MenuDespegable" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,113 +27,315 @@
                 <div class="col">
                     <ul class="navbar-nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><b>Inicio</b></a>
+                            <a class="nav-link" href="index.html"><b>Inicio</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><b>Tickets & Visitas</b></a>
+                            <a class="nav-link" href="#Productos"><b>Productos</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><b>Arte e historia</b></a>
+                            <a class="nav-link" href="#Marcas"><b>Marcas</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><strong>Acerca de</strong></a>
+                            <a class="nav-link" href="#Sucursales"><strong>Sucursales</strong></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-
-
-
-
     <!--Fin de cabecera-->
     <!--Inicio Banner-->
-    <div class="justify-content-center bg-image pt-5 img-fluid rounded float-left"
-        style="background-image: url(css/img/Museo_templo_del_sol.jpg); height: 100vh">
-        <h1 class="pt-xl-5 text-uppercase">Museo Templo del Sol</h1>
-        <div class="pt-xl-5 col-auto">
-            <p class="text-center text-white info">
-                Te invitamos a recibir toda la energia cosmica de nuetros pueblos milenarios y compartir el Arte
-                y la verdadera historia de nuestros Pueblos Andinos<br>
-                TE ESPERAMOS!!!!
-            </p>
+
+    <div id="carouselExampleCaptions" class="carousel slide pb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/portada.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>FERRETERIA PADILLA</h5>
+                    <p>CUALQUEIR HERRAMIENTA DE LA MEJOR CALIDAD</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/atractivo1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>FERRETERIA PADILLA</h5>
+                    <p>TODO EN HERRAMIENTAS</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/atractivo2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>FERRETERIA PADILLA</h5>
+                    <p>TODO EN REPARACIONES.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div id="clearfix"></div>
     <!--Fin Banner-->
     <!--Inicio tarjetas-->
-    <div class="container-fluid">
+    <div class="container-fluid pt-5" id="Productos" >
+        <div>
+            <h2 class="text-center">Lineas de Producción</h2>
+        </div>
         <div class="row">
             <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="./css/img/atractivo2.jpg" alt="Cancha">
+                <img class="img-fluid rounded" src="img/construccion.jpg" alt="construccion">
+                <h5 class="text-center">Construcción</h5>
                 <p class="description mb-2">
                     Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
                     aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
                 </p>
                 <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
-                    <p class="text-center"><a class="text-white" href="#">Leer más...</a></p>
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
                 </div>
-
             </div>
             <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="./css/img/atractivo2.jpg" alt="Cancha">
-                <!--<p class="icon">_</p>-->
+                <img class="img-fluid rounded" src="img/mortero.jpg" alt="morteros">
+                <h5 class="text-center">Morteros</h5>
                 <p class="description">
                     Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
                     aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
                 </p>
                 <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
-                    <p class="text-center"><a class="text-white" href="#">Leer más...</a></p>
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
                 </div>
             </div>
             <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="./css/img/atractivo2.jpg" alt="Cancha">
-                <!--<p class="icon">S</p>-->
+                <img class="img-fluid rounded" src="img/electricidad.jpeg" alt="electrico">
+                <h5 class="text-center">Electrico</h5>
                 <p class="description">
                     Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
                     aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
                 </p>
                 <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
-                    <p class="text-center"><a class="text-white" href="#">Leer más...</a></p>
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
                 </div>
             </div>
             <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="./css/img/atractivo2.jpg" alt="Cancha">
-                <!--<p class="icon">u</p>-->
+                <img class="img-fluid rounded" src="img/plomeria.jpg" alt="grifereria y plomeria">
+                <h5>Griferia y Plomeria</h5>
                 <p class="description">
                     Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
                     aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
                 </p>
                 <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
-                    <p class="text-center"><a class="text-white" href="#">Leer más...</a></p>
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
                 </div>
             </div>
             <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="./css/img/atractivo2.jpg" alt="Cancha">
-                <!--<p class="icon">a</p>-->
+                <img class="img-fluid rounded" src="img/herramientas.jpg" alt="herramientas">
+                <h5 class="text-center">Herramientas</h5>
                 <p class="description">
                     Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
                     aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
                 </p>
                 <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
-                    <p class="text-center"><a class="text-white" href="#">Leer más...</a></p>
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
                 </div>
             </div>
             <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="./css/img/atractivo2.jpg" alt="Cancha">
-                <!--<p class="icon">a</p>-->
+                <img class="img-fluid rounded" src="img/techos.jpg" alt="techos">
+                <h5 class="text-center">Techos</h5>
                 <p class="description">
                     Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
                     aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
                 </p>
                 <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
-                    <p class="text-center"><a class="text-white" href="#">Leer más...</a></p>
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 pt-2">
+                <img class="img-fluid rounded" src="img/pintura.jpg" alt="pinturas">
+                <h5 class="text-center">Pinturas</h5>
+                <p class="description">
+                    Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
+                    aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
+                </p>
+                <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 pt-2">
+                <img class="img-fluid rounded" src="img/prefileria.jpg" alt="perfileria">
+                <h5 class="text-center">Perfileria</h5>
+                <p class="description">
+                    Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
+                    aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
+                </p>
+                <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 pt-2">
+                <img class="img-fluid rounded" src="img/hogar.jpg" alt="Hog">
+                <h5 class="text-center">Hogar</h5>
+                <p class="description">
+                    Commodo eu ad esse dolor aliqua. Deserunt esse cillum cillum nisi exercitation eu anim Lorem
+                    aliquip voluptate duis. Duis nostrud id Lorem esse proident qui culpa ullamco.
+                </p>
+                <div class="bg-secondary border-black rounded mx-auto w-25 mb-0 ">
+                    <p class="text-center"><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
                 </div>
             </div>
         </div>
     </div>
     <!--Fin tarjetas-->
+    <!--Inicio Marcas Ferreteras-->
+    <div class="container-fluid pt-5" id="Marcas">
+        <div>
+            <h2 class="text-center">Marcas Ferreteras</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/adir.png" alt="ADIR">
+                <h5>ADIR</h5>
+                <p class="description mb-2">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/amana.png" alt="AMANA TOOL">
+                <h5>AMANA TOOL</h5>
+                <p class="description">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/austro.png" alt="AUSTOMEX">
+                <h5>AUSTOMEX</h5>
+                <p class="description">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/avante.png" alt="AVANTE">
+                <h5>AVANTE</h5>
+                <p class="description">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/axtech.png" alt="AXTECH">
+                <h5>AXTECH</h5>
+                <p class="description">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/bellota.png" alt="BELLOTA">
+                <h5>BELLOTA</h5>
+                <p class="description">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/balck.png" alt="BLACK AND DECKER">
+                <h5>BLACK AND DECKER</h5>
+                <p class="description">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 pt-2">
+                <img class="img-fluid rounded" src="img/bostitch.png" alt="BOSTITCH">
+                <h5>BOSTITCH</h5>
+                <p class="description">
+                    8 productos
+                </p>
+                <div class="bg-secondary border-black rounded w-25 mb-0 ">
+                    <p><a class="text-white" href="catalogo.html">Ver Catalogo</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Marcas Ferreteras-->
+    <!--Inicio Sucursales-->
+    <div class="container-fluid pt-5" id="Sucursales">
+        <div>
+            <h2 class="text-center">Sucursales</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pt-2">
+                <img class="img-fluid rounded" src="img/sucursal1.png" alt="construccion">
+                <h5 class="text-center">Sucursal 1</h5>
+                <p class="description mb-2">
+                    CARCELÉN<br>
+                    Diego de Vásquez N77-622 y Antonio Núñez<br>
+                    2477-505 / 2477-421
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63837.00766322205!2d-78.47715091175426!3d-0.0937536824880258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f6077a21a4b%3A0xdc26ce66cbef52de!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836229092!5m2!1ses!2sec"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-md-4 pt-2">
+                <img class="img-fluid rounded" src="img/sucursal2.png" alt="construccion">
+                <h5 class="text-center">Sucursal 2</h5>
+                <p class="description mb-2">
+                    SAN LUIS DE CALDERÓN<br>
+                    Geovanny Calles OE6-26 y Palermo<br>
+                    2826-870 / 2826-871
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.509899474895!2d-78.46267558649049!3d-0.08684238021705666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f191a99d65f%3A0x4f80c71b2ea007c!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836152470!5m2!1ses!2sec"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-4 pt-2">
+                <img class="img-fluid rounded" src="img/sucursal3.png" alt="construccion">
+                <h5 class="text-center">Sucursal 3</h5>
+                <p class="description mb-2">
+                    SAN JOSÉ DE MORÁN<br>
+                    Carlos Mantilla OE4-23 y Río de Janeiro<br>
+                    2032-721 / 2032-041
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.50877634192!2d-78.47421092089841!3d-0.0881624999999933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f23130ed983%3A0xcc37c475872cd0cc!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836408741!5m2!1ses!2sec"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!--Fin Sucursales-->
     <!--Inicio Pie de pagina-->
     <footer class="pt-2 bg-secondary">
         <div class="container">
@@ -141,18 +343,20 @@
                 <div class="col-md-4 pt-2">
                     <h5 class="display-6 text-center"><b>MENU</b></h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="#">INICIO</a></li>
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="#">TICKETS & VISITAS</a></li>
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="#">ARTE E HISTORIA</a></li>
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="#">ACERCA DE</a></li>
+                        <li class="nav-item pt-3"><a class="nav-link text-black" href="index.html">INICIO</a></li>
+                        <li class="nav-item pt-3"><a class="nav-link text-black" href="#Productos">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item pt-3"><a class="nav-link text-black" href="#Marcas">MARCAS</a></li>
+                        <li class="nav-item pt-3"><a class="nav-link text-black" href="#Sucursales">SUCURSALES</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-4 pt-2 pb-5">
-                    <h5 class="display-6 text-center"><b>¿DONDE ESTAMOS?</b></h5>
+                    <h5 class="display-6 text-center"><b>MATRIZ</b></h5>
                     <iframe class="w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127674.09995573937!2d-78.54632493235!3d-0.06661614998138324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a7824024ddf17%3A0x10d9858a3ccd745b!2sMuseo%20Templo%20del%20Sol%20Pintor%20Cristobal%20Ortega%20Maila!5e0!3m2!1ses!2sec!4v1653603639478!5m2!1ses!2sec"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.50643247224!2d-78.50737972089843!3d-0.09085570000000137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f5fcd4b6de1%3A0xbf732888b7615ee0!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836475635!5m2!1ses!2sec"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-md-4 pt-2">
                     <h5 class="display-6 text-"><b>CONTACTOS</b></h5>
@@ -160,17 +364,18 @@
                         <h2>Direccion:</h2>
                         <p class="text-white text-center" style="font-size:24px"><a href="#"
                                 class="icon text-black">?</a>
-                            Calle OE6F y pasaje T50E
+                            CARCELÉN<br>
+                            Alejandro Ponce y Clemente Yerovi
                         </p>
                         <h2>Telefonos:</h2>
                         <p class="text-white text-center" style="font-size:24px"><a href="#"
                                 class="icon text-black">u</a>
-                            0123456789
+                            2473-576
                         </p>
                         <h2>Correo:</h2>
-                        <p class="text-white text-center" style="font-size:24px"><a href="#"
-                                class="icon text-black">@</a>
-                            contacto@eltorito.com
+                        <p class="text-white text-center" style="font-size:24px"><a
+                                href="mailto:leonardo.andrade@epn.edu.ec?subject=Ayuda" class="icon text-black">@</a>
+                            correo@correo.com
                         </p>
                         <h2>Redes Sociales:</h2>
                         <nav class="social text-center" style="font-size:24px">
@@ -186,7 +391,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 pt-3">
-                    <p class="text-center">Copyright &copy; 2022 Museo Templo del Sol Quito, Ecuador<br>
+                    <p class="text-center">Copyright &copy; 2022 Prueba PrimerBimestre, Ecuador<br>
                         Designed by
                         <a href="mailto:leonardo.andrade@epn.edu.ec?subject=Ayuda">LMAC</a>
                     </p>
