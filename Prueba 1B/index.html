@@ -6,49 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" typpe="favicon/x-icon" href="css/img/icon.png">
-    <link rel="stylesheet" href="css/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Ferreteria Padilla</title>
 </head>
 
 <body>
     <!--Inicio de cabecera-->
-    <nav class="navbar bg-secondary fixed-top navbar-dark text-center">
-        <div class="container-fluid"></div>
-        <div class="row">
-            <div class="col">
-                <span><img class="img-fluid" style="width:35px" src="css/img/museum.ico" alt="Museo"
-                        title="Museo"></span>
-                <a class="navbar-brand text-white" href="#"><b style="font-size: 24px">Ferreteria Padilla</b></a>
+    <nav class="navbar navbar-expand-lg fixed-top barra_navegacion navbar-light">
+        <div class="container-fluid">
+            <span><img class="img-fluid" style="width:35px" src="css/img/museum.ico" alt="Museo"
+                title="Museo"></span>
+        <a class="navbar-brand" href="#"><b style="font-size: 24px">Ferreteria Padilla</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuDespegable"
+                aria-controls="MenuDespegable" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuDespegable">
+                <div class="col">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Inicio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Tickets & Visitas</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Arte e historia</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>Acerca de</strong></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="col">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#"><b>Inicio</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#"><b>Tickets & Visitas</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#"><b>Arte e historia</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#"><strong>Acerca de</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">
-                        <spam class="icon"><strong>U</strong></spam>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">
-                        <spam class="icon"><strong>L</strong></spam>
-                    </a>
-                </li>
-            </ul>
-        </div>
     </nav>
+
+
+
+
     <!--Fin de cabecera-->
     <!--Inicio Banner-->
     <div class="justify-content-center bg-image pt-5 img-fluid rounded float-left"
@@ -160,23 +158,27 @@
                     <h5 class="display-6 text-"><b>CONTACTOS</b></h5>
                     <p>
                         <h2>Direccion:</h2>
-                        <p class="text-white text-center" style="font-size:24px"><a href="#" class="icon text-black">?</a>
+                        <p class="text-white text-center" style="font-size:24px"><a href="#"
+                                class="icon text-black">?</a>
                             Calle OE6F y pasaje T50E
                         </p>
                         <h2>Telefonos:</h2>
-                        <p class="text-white text-center"style="font-size:24px"><a href="#" class="icon text-black">u</a>
+                        <p class="text-white text-center" style="font-size:24px"><a href="#"
+                                class="icon text-black">u</a>
                             0123456789
                         </p>
                         <h2>Correo:</h2>
-                        <p class="text-white text-center"style="font-size:24px"><a href="#" class="icon text-black">@</a>
+                        <p class="text-white text-center" style="font-size:24px"><a href="#"
+                                class="icon text-black">@</a>
                             contacto@eltorito.com
                         </p>
                         <h2>Redes Sociales:</h2>
-                        <nav class="social text-center"style="font-size:24px">
+                        <nav class="social text-center" style="font-size:24px">
                             <ul>
-                                <li><a href="#" class="icon">t</a></li>
-                                <li><a href="#" class="icon">f</a></li>
-                                <li><a href="#" class="icon">y</a></li>
+                                <li><a href="https://mobile.twitter.com/ferrepadilla" class="icon"
+                                        style="font-size:150%">t</a></li>
+                                <li><a href="https://www.facebook.com/ferreteriapadillaecuador" class="icon">f</a>
+                                </li>
                             </ul>
                         </nav>
                     </p>

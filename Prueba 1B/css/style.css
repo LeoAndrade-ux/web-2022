@@ -45,15 +45,25 @@ body{
     font-weight: 600;
 
 }
-ul li{
+
+.barra_navegacion{
+    background-color: white;
+}
+.barra_navegacion a{
+    padding-left: 5px;
+    color:black;
+    text-decoration: none;
+}
+.barra_navegacion a:hover{
+    color:orange
+}
+
+
+ul li {
     color: black;
     font-size: 24px;
 }
-ul li a:hover{
-    color: white;
-    transform: scale(1.2,1.2);
-    text-decoration: underline;
-}
+
 /*Footer*/
 .social{
     height: 70px;
@@ -74,4 +84,10 @@ ul li a:hover{
     color: black;
     text-decoration: none;
     transition: all 200ms;
+}
+@media(max-width:990px){
+    .barra_navegacion a:hover{
+        color:white;
+        background-color:blue;
+    }
 }
