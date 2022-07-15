@@ -14,7 +14,8 @@
 
 <body>
     <!--Inicio de cabecera-->
-    <header>
+    <header id="header">
+
         <nav class="navbar navbar-expand-lg fixed-top barra_navegacion navbar-light">
             <div class="container-fluid">
                 <span><img class="img-fluid" style="width:35px" src="img/Icono_FP.ico" alt="Ferreteria Padilla"
@@ -51,7 +52,7 @@
     <!--Fin de cabecera-->
 
     <!--Inicio Banner-->
-    <section class="Banner">
+    <section id="Banner">
         <div id="carouselExampleCaptions" class="carousel slide pb-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -318,53 +319,55 @@
     <!--Fin Marcas Ferreteras-->
 
     <!--Inicio Sucursales-->
-    <div class="container-fluid pt-5" id="Sucursales">
-        <div>
-            <h2 class="text-center">Sucursales</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="img/sucursal1.png" alt="construccion">
-                <h5 class="text-center">Sucursal 1</h5>
-                <p class="description mb-2">
-                    CARCELÉN<br>
-                    Diego de Vásquez N77-622 y Antonio Núñez<br>
-                    2477-505 / 2477-421
-                </p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63837.00766322205!2d-78.47715091175426!3d-0.0937536824880258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f6077a21a4b%3A0xdc26ce66cbef52de!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836229092!5m2!1ses!2sec"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section>
+        <div class="container-fluid pt-5" id="Sucursales">
+            <div>
+                <h2 class="text-center">Sucursales</h2>
             </div>
+            <div class="row">
+                <div class="col-md-4 pt-2">
+                    <img class="img-fluid rounded" src="img/sucursal1.png" alt="construccion">
+                    <h5 class="text-center">Sucursal 1</h5>
+                    <p class="description mb-2">
+                        CARCELÉN<br>
+                        Diego de Vásquez N77-622 y Antonio Núñez<br>
+                        2477-505 / 2477-421
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63837.00766322205!2d-78.47715091175426!3d-0.0937536824880258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f6077a21a4b%3A0xdc26ce66cbef52de!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836229092!5m2!1ses!2sec"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-            <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="img/sucursal2.png" alt="construccion">
-                <h5 class="text-center">Sucursal 2</h5>
-                <p class="description mb-2">
-                    SAN LUIS DE CALDERÓN<br>
-                    Geovanny Calles OE6-26 y Palermo<br>
-                    2826-870 / 2826-871
-                </p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.509899474895!2d-78.46267558649049!3d-0.08684238021705666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f191a99d65f%3A0x4f80c71b2ea007c!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836152470!5m2!1ses!2sec"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-md-4 pt-2">
-                <img class="img-fluid rounded" src="img/sucursal3.png" alt="construccion">
-                <h5 class="text-center">Sucursal 3</h5>
-                <p class="description mb-2">
-                    SAN JOSÉ DE MORÁN<br>
-                    Carlos Mantilla OE4-23 y Río de Janeiro<br>
-                    2032-721 / 2032-041
-                </p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.50877634192!2d-78.47421092089841!3d-0.0881624999999933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f23130ed983%3A0xcc37c475872cd0cc!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836408741!5m2!1ses!2sec"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-md-4 pt-2">
+                    <img class="img-fluid rounded" src="img/sucursal2.png" alt="construccion">
+                    <h5 class="text-center">Sucursal 2</h5>
+                    <p class="description mb-2">
+                        SAN LUIS DE CALDERÓN<br>
+                        Geovanny Calles OE6-26 y Palermo<br>
+                        2826-870 / 2826-871
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.509899474895!2d-78.46267558649049!3d-0.08684238021705666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f191a99d65f%3A0x4f80c71b2ea007c!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836152470!5m2!1ses!2sec"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4 pt-2">
+                    <img class="img-fluid rounded" src="img/sucursal3.png" alt="construccion">
+                    <h5 class="text-center">Sucursal 3</h5>
+                    <p class="description mb-2">
+                        SAN JOSÉ DE MORÁN<br>
+                        Carlos Mantilla OE4-23 y Río de Janeiro<br>
+                        2032-721 / 2032-041
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.50877634192!2d-78.47421092089841!3d-0.0881624999999933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f23130ed983%3A0xcc37c475872cd0cc!2sFerreteria%20Padilla!5e0!3m2!1ses!2sec!4v1657836408741!5m2!1ses!2sec"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--Fin Sucursales-->
 
     <!--Inicio Pie de pagina-->
@@ -372,15 +375,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-2">
-                    <h5 class="display-6 text-center"><b>MENU</b></h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="index.html">INICIO</a></li>
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="/Prueba 1B/index.html#Productos">PRODUCTOS</a>
-                        </li>
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="/Prueba 1B/index.html#Marcas">MARCAS</a></li>
-                        <li class="nav-item pt-3"><a class="nav-link text-black" href="/Prueba 1B/index.html#Sucursales">SUCURSALES</a>
-                        </li>
-                    </ul>
+                    <h5 class="display-6 text-center"><b>Acerca de nosotros</b></h5>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZlRirSdy-UM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="col-md-4 pt-2 pb-5">
                     <h5 class="display-6 text-center"><b>MATRIZ</b></h5>
@@ -407,12 +406,12 @@
                         <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                     <h2>Redes Sociales:</h2>
-                        <nav class="social text-center"style="font-size:24px">
-                            <ul>
-                                <li><a href="https://twitter.com/ferrepadilla" class="icon">t</a></li>
-                                <li><a href="https://www.facebook.com/ferreteriapadillaecuador/" class="icon">f</a></li>
-                            </ul>
-                        </nav>
+                    <nav class="social text-center" style="font-size:24px">
+                        <ul>
+                            <li><a href="https://twitter.com/ferrepadilla" class="icon">t</a></li>
+                            <li><a href="https://www.facebook.com/ferreteriapadillaecuador/" class="icon">f</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="row">
