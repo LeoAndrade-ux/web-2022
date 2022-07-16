@@ -20,52 +20,49 @@ fetch('https://jsonplaceholder.typicode.com/users')
         divUsuarios.append(nombre)
     })
 })*/
-var divUsuarios = document.querySelector("#usuarios");
-var divUsuarioGeorge = document.querySelector("#usuarioGeorge");
+var divUsuarios=document.querySelector("#usuarios");
+var divUsuarioGeorge=document.querySelector("#usuarioGeorge");
 
-function getUsuarios() {
+function getUsuarios(){
     return fetch('https://jsonplaceholder.typicode.com/users');
 }
-
-function getUsuarioGeorge() {
+function getUsuarioGeorge(){
     return fetch('https://reqres.in/api/users/1');
 }
-
-function listadoUsuarios(usuarios) {
-    usuarios.map((data, i) => {
-        let nombre = document.createElement("h3");
-        nombre.innerHTML = i + "-" + data.name + "-" + data.address.street;
+function listadoUsuarios(usuarios){
+    usuarios.map((data,i)=>{
+        let nombre=document.createElement("h3");
+        nombre.innerHTML=i+"-"+data.name+"-"+data.address.street;
         divUsuarios.appendChild(nombre);
-        document.querySelector(".loading").style.display = 'none';
+        document.querySelector(".loading").style.display='none';
     });
 }
+function mostrarUsuarioGeorge(usuario){
+        let nombre=document.createElement("h3");
+        let avatar=document.createElement("img");
+        nombre.innerHTML=usuario.data.first_name;
 
-function mostrarUsuarioGeorge(usuario) {
-    let nombre = document.createElement("h3");
-    let avatar = document.createElement("img");
-    nombre.innerHTML = usuario.data.first_name;
+        avatar.src=usuario.data.avatar;
+        avatar.width="80";
 
-    avatar.src = usuario.data.avatar;
-    avatar.width = "80";
-
-    divUsuarioGeorge.appendChild(nombre);
-    divUsuarioGeorge.appendChild(avatar);
-    document.querySelector("#usuarioGeorge .loading").style.display = 'none';
+        divUsuarioGeorge.appendChild(nombre);
+        divUsuarioGeorge.appendChild(avatar);
+        document.querySelector("#usuarioGeorge .loading").style.display='none';
 }
 getUsuarios()
-    .then(data => data.json())
-    .then(users => {
-        listadoUsuarios(users);
-    })
-    .then(data => {
-        return getUsuarioGeorge();
-    })
-    .then(data => data.json())
-    .then(
-        user => {
-            mostrarUsuarioGeorge(user);
-        }
-    )
-    .catch(error => {
-        alert("Error en la peticion");
-    })
+.then(data=>data.json())
+.then(users=>{
+    listadoUsuarios(users);
+})
+.then(data=>{
+    return getUsuarioGeorge();
+})
+.then(data=>data.json())
+.then(
+    user=>{
+        mostrarUsuarioGeorge(user);
+    }
+)
+.catch(error=>{
+    alert("Error en la peticion");
+})
