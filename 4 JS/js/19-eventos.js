@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
     //eventos cuando el usuario da click, pasa por un elemento
     var boton = document.querySelector("#boton");
     var boton2 = document.querySelector("#boton2");
+    var body = document.querySelector("#body")
     console.log(boton);
 
     function cambiarColor() {
@@ -26,6 +27,7 @@ window.addEventListener('load', () => {
     //Evento mouseover
     boton2.addEventListener('mouseover', function () {
         this.style.background = "yellow";
+        body.style.background = "black";
     });
 
     //Evento mouseout

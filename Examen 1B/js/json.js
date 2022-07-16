@@ -47,9 +47,11 @@ window.addEventListener('load', () => {
         eum minus! Velit facere corporis beatae!`
         }
     ];
-    var div_articulos = document.querySelector("#articulo1");
+    var div_articulos = document.querySelector("#articles");
+    var texto;
     var index;
     for (index in articulos) {
+
         var articulo = document.createElement("article")
 
         var titulo = document.createElement("h4");
@@ -71,7 +73,5 @@ window.addEventListener('load', () => {
         enlace.appendChild(textoEnlace);
         articulo.append(enlace)
         div_articulos.append(articulo)
-
-
     }
 });
