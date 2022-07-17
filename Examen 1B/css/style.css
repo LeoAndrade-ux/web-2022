@@ -11,6 +11,7 @@ body {
 
 body {
     background-image: url("./img/fondo1.jpeg");
+    background-attachment: fixed;
 }
 
 .container {
@@ -293,10 +294,10 @@ aside img {
     background-color: #59718d;
 }
 #rojo{
-    background-color: red;
+    background-color:  #cc3c1c;
 }
 #azul{
-    background-color:blue;
+    background-color: #0470bc ;
 }
 
 

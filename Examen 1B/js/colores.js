@@ -16,26 +16,28 @@ window.addEventListener('load', () => {
             });
         }
         logo.style.background ="#59718d";
-        body.style.background ="url('/Examen 1B/css/img/fondo1.jpeg')";
+        body.style.background ="url('/Examen 1B/css/img/fondo1.jpeg') fixed";
+
     });
 
     boton2.addEventListener('click', function () {
         if (enlace.length!=0){
             enlace.forEach(function (enlace){
-                enlace.style.background ="red";
+                enlace.style.background =" #cb3010";
             });
         }
-        logo.style.background ="red";
-        body.style.background ="url('/Examen 1B/css/img/fondo2.jpg')";
+        logo.style.background =" #cb3010";
+        body.style.background ="url('/Examen 1B/css/img/fondo2.jpg') fixed";
+        
     });
 
     boton3.addEventListener('click', function () {
         if (enlace.length!=0){
             enlace.forEach(function (enlace){
-                enlace.style.background ="blue";
+                enlace.style.background =" #0470bc ";
             });
         }
-        logo.style.background ="blue";
-        body.style.background ="url('/Examen 1B/css/img/fondo3.jpg')";
+        logo.style.background =" #0470bc ";
+        body.style.background ="url('/Examen 1B/css/img/fondo3.jpg') fixed";
     });
 });
