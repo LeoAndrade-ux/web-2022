@@ -34,7 +34,7 @@
     -->
 </head>
 
-<body id="body">
+<body>
     <!-- <h1>Usando Javascript</h1>
         <section id="miSeccion">
             <h1 id="encabezado">Mis divs:</h1>
@@ -47,13 +47,26 @@
     <!--
     <script type="text/javascript" src="js/17-dom.js"></script>
     <script type="text/javascript" src="js/18-bom.js"></script>
-    
-    -->
-    <script type="text/javascript" src="19-eventos.js"></script>
     <button id="boton" onclick="alert('Hola, bienvenido');">Aceptar</button>
-    <p id="boton2" onclick="cambiarColor();">OK</p>
+    <button id="boton2" onclick="cambiarColor();">OK</button>
     <form>
         <input type="text" name="nombre" id="nombre">
+    </form>
+    -->
+    <script type="text/javascript" src="22-ejercicio-local-storage.js"></script>
+    <h2>Agregar pelílculas</h2>
+    <form id="formPeliculas">
+        <input type="text" id="addPelicula" />
+        <button type="submit">Agregar</button>
+    </form>
+    <h2>Películas</h2>
+    <div id="peliculas">
+        <ul id="peliculasList"></ul>
+    </div>
+    <h2>Borrar películas</h2>
+    <form id="formBorrarPelicula">
+        <input type="text" id="borrarPelicula" />
+        <button type="submit">Borrar</button>
     </form>
 </body>
 

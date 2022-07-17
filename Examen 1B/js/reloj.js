@@ -1,4 +1,5 @@
 'use strict'
+
 const mostrarReloj = () => {
     let fecha = new Date();
     let hr = formatoHora(fecha.getHours());

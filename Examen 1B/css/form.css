@@ -1,0 +1,51 @@
+#form input[type="email"],
+#form input[type="text"] {
+    display: block;
+    margin: 0px auto;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc inset;
+    border-radius: 5px;
+    color: gray;
+}
+
+#form input[type="email"]:focus
+{
+    color: #555;
+    box-shadow: 2px 1px 1px gray inset;
+}
+
+#form #nombre,
+#form #apellido,
+#form #genero,
+#form #email,
+#form #fecha,
+#form #edad {
+    display: block;
+    text-align:center;
+    margin-left: 0px;
+    margin-top: 6px;
+    height: 30px;
+    color: #2d394b;
+}
+
+#form input[type="submit"]{
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    margin-top: 20px;
+    color: white;
+    background:  #0d56a0;
+    border: 1px solid #4baf50;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    transition: all 300ms;
+}
+
+#form input[type="submit"]:hover {
+    box-shadow: 0px 0px 5px gray;
+}

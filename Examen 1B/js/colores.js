@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
     boton2.addEventListener('click', function () {
         if (enlace.length!=0){
             enlace.forEach(function (enlace){
-                enlace.style.background ="#red";
+                enlace.style.background ="red";
             });
         }
         logo.style.background ="red";

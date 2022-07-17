@@ -1,12 +1,7 @@
-5. Implementar un selector de redes sociales (facebook, twitter, youtube e instagram). Cada red social se abre en una nueva página,
-utilice la imagen del archivo adjunto. (5 ptos.)
-7. En cada página web mostrar el formulario de login falso que nos permita guardar en el localstorage el nombre del usuario y
-en el caso de que exista la “sesión” mostrarla. (5 ptos.)
-8. En la sección “Sobre mí” colocar un acordeón de jquery ui (5 ptos.)
-10. En la sección de "Contacto" colocar un formulario de contacto con la respectiva validación (5 ptos.)
+0. Paleta de colores
 11. En la sección "Mis amigos" procesar la información de la siguiente URL: https://rickandmortyapi.com/api/character/?page=3, como se pide a continuación: (10 ptos.)
 
-1) Busque los tipos de "name"
+
 2) Busque los tipos de "type"
 3) Busque los tipos de "gender"
 4) Busque los tipos de "status"

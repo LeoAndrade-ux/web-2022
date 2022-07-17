@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     //seleccion de parrafos por id
-    var rojo = $("#rojo").css("background", "red");
+    var rojo = $("#rojo").css("background-image", "url('/Examen 1B/css/img/facebook.png')").css("background-repeat", "no-repeat");
     //encadenamiento de elementos
     var amarillo = $("#amarillo").css("background", "yellow")
         .css("color", "red");

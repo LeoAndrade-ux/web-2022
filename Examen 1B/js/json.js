@@ -48,7 +48,6 @@ window.addEventListener('load', () => {
         }
     ];
     var div_articulos = document.querySelector("#articles");
-    var texto;
     var index;
     for (index in articulos) {
 
