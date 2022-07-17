@@ -109,23 +109,41 @@ body {
     margin: 20px;
 }
 
-aside h3 {
+aside .soy {
+    position: relative;
+    top:-4px;
     width: 100px;
     height: 45px;
     line-height: 49px;
     background-color: #85a5b7;
     color: black;
-    font-size: 18px;
+    font-size: 12px;
     margin-top: 30px;
     margin-bottom: 15px;
     margin-left: 110px;
     text-align: center;
-
+    padding:0px;
 }
 
 aside img {
     margin: 10px auto;
     display: block;
+}
+aside h3{
+    background-color: white;
+    width: 100px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 110px;
+}
+
+.linea{
+    position: relative;
+    top:15px;
+    background-image: url("./img/lines.png");
+    height:10px;
+    z-index: -1;
+
 }
 
 #lateral input[type="button"] {
@@ -207,17 +225,15 @@ aside img {
 }
 
 #logout{
-    position: absolute;
-    top: 168%;
+    display: inline;
     right: 15%;
-    width: 1.5%;
+    width: 9%;
 }
 #text-logout{
-    position: absolute;
-    top: 169%;
-    right: 17%;
-    width: 1.5%;
-    color:  #fc6404 ;
+    margin-left:45%;
+    display: inline;
+    width: 100%;
+    color:  #fc6404;
 }
 #logout:hover{
     cursor: pointer;
