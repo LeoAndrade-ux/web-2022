@@ -1,0 +1,15 @@
+/*Preprocesadores de CSS
+permiten agregar funcionalidad a CSS
+los mas importantes
+SASS: https://sass-lang.com/
+LESS: https://lesscss.org/
+
+Instalacion
+1 Instalar NodeJS para trabajar con la terminal
+2 Comprobar la instalacion ejecutamos node -v
+3 Instalacion SASS npm install -g sass
+4 Comprobar la version de sass
+
+sass archivo_entrada.scss archivo_salida.css 
+sass --watch archivo_entrada.scss archivo_salida.css 
+*/

@@ -1,0 +1,8 @@
+1 Instalacion
+npm install -g @angular/cli
+2 Version
+ng --version
+3 crear proyecto
+ng new aprendiendo-angular
+desinstalar 
+npm unistall -g @angular/cli
