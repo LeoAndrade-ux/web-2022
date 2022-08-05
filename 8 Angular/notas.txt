@@ -1,8 +1,11 @@
 1 Instalacion
 npm install -g @angular/cli
 2 Version
-ng --version
+ng version
 3 crear proyecto
 ng new aprendiendo-angular
-desinstalar 
+4 Ejecutar
+npm start
+ng serve
+desinstalar
 npm unistall -g @angular/cli
