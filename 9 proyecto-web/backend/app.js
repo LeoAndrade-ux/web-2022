@@ -19,12 +19,12 @@ app.use((req,res,next)=>{
 });
 
 //rutas
-/*
+
 app.get('/',(req,res)=>{
     res.status(468).send(
         "<h1>Hola bienvenido</h1>"
     )
-})*/
+})
 app.use('/',concesionario_routes);
 
 module.exports=app;
