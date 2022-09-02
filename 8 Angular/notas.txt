@@ -1,6 +1,6 @@
 1 Instalacion
-npm install -g @angular/cli
-2 Version
+
+npm install -g @angular/cli2 Version
 ng version
 3 crear proyecto
 ng new aprendiendo-angular
