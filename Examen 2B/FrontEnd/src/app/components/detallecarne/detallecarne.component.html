@@ -1,0 +1,25 @@
+<h2>Detalle Carne</h2>
+<div class = "container" *ngIf="carne">
+    <div class="imagen" *ngIf="carne.imagen">
+        <img src="{{url+'get-imagen/'+carne.imagen}}" *ngIf="carne.imagen">
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="data">
+    <h3>{{carne.tipocarne}}</h3>
+    <h3>{{carne.precio}}</h3>
+    <h3>{{carne.corte}}</h3>
+    <h3>{{carne.subTipocarne}}</h3>
+    <p *ngIf="confirm==false">
+        <a [routerLink]="['/editar-carne', carne._id]" class = "button-edit">Editar</a>
+        <a (click)="setConfirm(true)" class = "button-delete">Borrar</a>
+    </p>
+
+    <p *ngIf="confirm==true">
+        <span class="confirm">Estas seguro de eliminar este elemento?</span><br>
+        <a (click)="setConfirm(false)" class = "button-edit">Cancelar</a>
+        <a (click)="borrarCarne(carne._id)" class = "button-delete">Eliminar definitivamente</a>
+
+    </p>
+</div>

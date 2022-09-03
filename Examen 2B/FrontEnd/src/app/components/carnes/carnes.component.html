@@ -1,0 +1,10 @@
+<h2>Carnes</h2>
+<ul>
+    <li *ngFor="let carne of carnes" class="carne">
+        <a [routerLink]="['/carne', carne._id]">
+            <h3>{{carne.tipocarne}} - {{carne.corte}}</h3>
+            <img src="{{url+'get-imagen/'+ carne.imagen}}" *ngIf="carne.imagen">
+
+        </a>
+    </li>
+</ul>
