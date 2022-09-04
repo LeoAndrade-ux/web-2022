@@ -36,5 +36,19 @@ export class CarnesComponent implements OnInit {
       }
     )
   }
+  //no implementado aun
+  /*
+  getCarnesCorte(corte:String){
+    this._carneService.getCarnesCorte(corte).subscribe(
+      response =>{
+        if(response.carnes){
+          this.carnes = response.carnes
+        }
+      },
+      error=>{
+        console.log(<any>error)
+      }
+    )
+  }*/
 
 }

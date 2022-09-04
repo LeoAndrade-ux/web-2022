@@ -27,8 +27,8 @@ export class CreatecarneComponent implements OnInit {
   ){
     this.titulo = 'Registrar Producto Carne';
     this.url = Global.url
-    this.carne = new Carne('','',5,'','','')
-    this.carneGuardar = new Carne('','',5.5,'','','')
+    this.carne = new Carne('','',0.0,'','','')
+    this.carneGuardar = new Carne('','',0.0,'','','')
     this.status = ""
     this.idGuardado = ""
     this.archivosParaCargar = []

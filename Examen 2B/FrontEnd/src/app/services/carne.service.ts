@@ -17,6 +17,10 @@ export class CarneService {
         let headers = new HttpHeaders().set('Content-Type', 'application/json')
         return this.http.get(this.url + 'carnes',{headers: headers})
     }
+    getCarnesCorte(corte:String): Observable<any> {
+        let headers = new HttpHeaders().set('Content-Type', 'application/json')
+        return this.http.get(this.url + 'get-carne/'+corte,{headers: headers})
+    }
     //guardar carne
     guardarCarne(carne: Carne): Observable<any> {
         let params  = JSON.stringify(carne)
