@@ -91,7 +91,18 @@ var controller = {
                 res.status(200).send({message:'No existe la imagen'});
             }
         })
-    }
+    },
+    getCarneCorte: function (req, res) {
+        var carneCorte = req.params.corte;
+        if (carneCorte == null) return res.status(404).send({ message: 'La ropa no existe' });
+        Carne.find({ corte: { $eq: carneCorte } }, (err, carne) => {
+            if (err) return res.status(500).send({ message: 'Error al recuperar los datos' });
+            if (!carne) return res.status(404).send({ message: 'La ropa no existe' });
+            return res.status(200).send({ carne });
+
+        })
+
+    },
 }
 
 module.exports = controller

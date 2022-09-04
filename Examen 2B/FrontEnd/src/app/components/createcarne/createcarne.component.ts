@@ -25,7 +25,7 @@ export class CreatecarneComponent implements OnInit {
     private carneService: CarneService,
     private cargarService: CargarService
   ){
-    this.titulo = 'Guardar Carne';
+    this.titulo = 'Registrar Producto Carne';
     this.url = Global.url
     this.carne = new Carne('','',5,'','','')
     this.carneGuardar = new Carne('','',5.5,'','','')

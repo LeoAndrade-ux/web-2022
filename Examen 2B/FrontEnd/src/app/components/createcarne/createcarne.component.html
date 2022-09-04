@@ -1,47 +1,57 @@
-<div class="container" *ngIf="carne">
-    <h2>{{titulo}}</h2>
-    <div class="message success" *ngIf = "status=='success'">
-        La carne se ha guardado correctamente, puedes verlo <a [routerLink]="['/carne',idGuardado]">aqui</a>
+<div class="row m-0 justify-content-center" *ngIf="carne">
+    <h2 class="text-center  py-5">{{ titulo }}</h2>
+    <div class="w-75 col-auto text-center p-5">
+        <form #carneForm="ngForm" (ngSubmit)="guardarCarne(carneForm)" id="form">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" name="tipocarne" id="tipocarne" #tipocarne="ngModel" [(ngModel)]="carne.tipocarne"
+                        required class="form-control"/>
+                        <label class="form-label">Tipo Carne</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" name="subTipocarne" id="subTipocarne" #subTipocarne="ngModel"
+                        [(ngModel)]="carne.subTipocarne" class="form-control" required/>
+                        <label class="form-label" for="form6Example2">Subtipo Carne</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <input type="number" name="precio" id="precio" #precio="ngModel" [(ngModel)]="carne.precio" required class="form-control" />
+                <label class="form-label" for="form6Example3">Precio</label>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <input type="text" name="corte" id="corte" #corte="ngModel" [(ngModel)]="carne.corte" required class="form-control" />
+                <label class="form-label" for="form6Example4">Corte</label>
+            </div>
+            <!-- File -->
+            <div class="form-outline mb-4">
+                <input type="file" #archivoImagen name="imagen" id="imagen" placeholder="Examinar..."
+                (change)="imagenChangeEvent($event)" class="form-control"/>
+                <label class="form-label" for="form6Example8">
+                    Imagen
+                </label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4" [disabled]="!carneForm.form.valid">
+                Guardar
+            </button>
+
+            <div class="message success" *ngIf="status == 'success'">
+                La carne se ha guardado correctamente, puedes verlo
+                <a [routerLink]="['/carne', idGuardado]">aqui</a>
+            </div>
+            <div class="message failed" *ngIf="status == 'failed'">
+                La carne no se ha podido guardar
+            </div>
+        </form>
     </div>
-    <div class="message failed" *ngIf = "status=='failed'">
-        La carne no se ha podido guardar
-    </div>
-    <form #carneForm="ngForm" (ngSubmit)="guardarCarne(carneForm)">
-        <p>
-            <label for="tipocarne">Tipo Carne</label>
-            <input type="text" name="tipocarne" id="tipocarne" #tipocarne="ngModel" [(ngModel)]="carne.tipocarne" required>
-            <span *ngIf = "tipocarne.touched && !tipocarne.valid">
-                Fabricante obligatorio
-            </span>
-        </p>
-        <p>
-            <label for="precio">Precio</label>
-            <input type="number" name="precio" id="precio" #precio="ngModel" [(ngModel)]="carne.precio" required>
-            <span *ngIf = "precio.touched && !precio.valid">
-                Precio obligatorio
-            </span>
-        </p>
-        <p>
-            <label for="corte">Corte</label>
-            <input type="text" name="corte" id="corte" #corte="ngModel" [(ngModel)]="carne.corte" required>
-            <span *ngIf = "corte.touched && !corte.valid">
-                Fabricante obligatorio
-            </span>
-        </p>
-        <p>
-            <label for="subTipocarne">Subtipo Carne</label>
-            <input type="text" name="subTipocarne" id="subTipocarne" #subTipocarne="ngModel" [(ngModel)]="carne.subTipocarne" required>
-            <span *ngIf = "subTipocarne.touched && !subTipocarne.valid">
-                subTipocarne obligatorio
-            </span>
-        </p>
-        <p>
-            <label for="imagen">Imagen</label>
-            <span *ngIf = "carne.imagen" style="float: none;">
-                <img src="{{url+'get-imagen/'+carne.imagen}}" style="width: 100px;">
-            </span>
-            <input type="file" #archivoImagen name="imagen" id="imagen" placeholder="Examinar..." (change)="imagenChangeEvent($event)">
-        </p>
-        <input type = "submit" value="Guardar" [disabled]="!carneForm.form.valid">
-    </form>
 </div>

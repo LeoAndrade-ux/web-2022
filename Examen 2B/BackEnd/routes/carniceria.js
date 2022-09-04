@@ -29,5 +29,8 @@ router.post('/subir-imagenes/:id',multiPartMiddleWare,CarniceriaController.uploa
 //ver imagen
 router.get('/get-imagen/:imagen',CarniceriaController.getImagen)
 
+//buscar por corte
+router.get('/get-carne/:corte', CarniceriaController.getCarneCorte);
+
 
 module.exports = router;
